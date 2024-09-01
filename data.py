@@ -2,10 +2,12 @@ import requests
 
 QUIZ_API_URL = "https://opentdb.com/api.php"
 
+AMOUNT = 10
+CATEGORY = 0
 
 parameters = {
-    "amount": 10,
-    "category": 17,
+    "amount": AMOUNT,
+    "category": CATEGORY,
     "type": "boolean"
 }
 

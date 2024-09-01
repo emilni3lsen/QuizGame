@@ -1,5 +1,6 @@
 from tkinter import *
 from quiz_brain import QuizBrain
+from data import AMOUNT
 
 THEME_COLOR = "#375362"
 
@@ -37,7 +38,7 @@ class QuizInterface:
             self.canvas.itemconfig(self.question_text, text=question)
         else:
             self.score_text.config(text="")
-            self.canvas.itemconfig(self.question_text, text=f"You've completed the quiz!\nScore: {self.quiz.score}/10" )
+            self.canvas.itemconfig(self.question_text, text=f"You've completed the quiz!\nScore: {self.quiz.score}/{AMOUNT}" )
             self.true_button.config(state="disabled")
             self.false_button.config(state="disabled")
     
